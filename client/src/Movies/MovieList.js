@@ -24,6 +24,7 @@ const MovieList = props => {
       {movies.map(movie => (
         <Link to={`/movies/${movie.id}`}>
           <MovieDetails key={movie.id} movie={movie} />
+          {console.log("here is the", movie)}
         </Link>
       ))}
     </div>
