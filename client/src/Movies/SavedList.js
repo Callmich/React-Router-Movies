@@ -5,8 +5,10 @@ const SavedList = props => (
   <div className="saved-list">
     <h3>Saved Movies:</h3>
     {props.list.map(movie => (
+      
       <span className="saved-movie">
-        <Link>{movie.title}</Link>
+        {console.log("v import movie",movie)}
+        <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
       </span>
     ))}
     <Link to="/"className="home-button">Home</Link>
