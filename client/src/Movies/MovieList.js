@@ -29,6 +29,7 @@ const MovieList = props => {
         </Link>
       ))}
     </div>
+    
   );
 }
 
