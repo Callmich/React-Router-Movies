@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const SavedList = props => (
   <div className="saved-list">
@@ -8,10 +8,10 @@ const SavedList = props => (
       
       <span className="saved-movie">
         {console.log("v import movie",movie)}
-        <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
+        <NavLink exact to={`/movies/${movie.id}`}>{movie.title}</NavLink>
       </span>
     ))}
-    <Link to="/"className="home-button">Home</Link>
+    <Link exact to="/"className="home-button">Home</Link>
   </div>
 );
 

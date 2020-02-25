@@ -19,7 +19,7 @@ const App = () => {
         <MovieList />
       </Route>
 
-      <Route path="/movies/:movieID">
+      <Route exact path="/movies/:movieID">
         <Movie addToSavedList={addToSavedList}/>
       </Route>
     </div>
